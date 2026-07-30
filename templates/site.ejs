@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Omnium Folio <%= day.date %></title>
+<meta name="theme-color" content="#e8c66b">
+<meta property="og:site_name" content="omniumfoliosnitch">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Omnium Folio, missing progress <%= day.date %>">
+<meta property="og:description" content="<%= day.missingCount %> of <%= day.total %> Finnish mythic raiders have not finished their Omnium Folio.">
+<meta property="og:url" content="https://marantle.github.io/omniumfoliosnitch/<%= day.date %>.html">
+<meta name="twitter:card" content="summary">
 <style>
   * { box-sizing: border-box; }
   body {
