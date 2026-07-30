@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Omnium Folio report - <%= guildSlug %></title>
+<style>
+  body { font-family: sans-serif; background: #1a1a1a; color: #ddd; max-width: 700px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.4em; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 0.35em 0.8em; border-bottom: 1px solid #333; }
+  th { color: #999; font-weight: normal; }
+  tr.locked td:last-child { color: #e05555; }
+  tr.partial td:last-child { color: #e0a955; }
+  tr.nodata td:last-child { color: #777; }
+  p { color: #999; }
+</style>
+</head>
+<body>
+<h1>Omnium Folio, missing progress</h1>
+<p>Guild <%= guildSlug %> (<%= realm %>), rank <%= maxRank %> and above.
+<%= missing.length %> of <%= total %> checked members are not done.<%= luraOnly ? " Only members with a mythic L'ura kill are included." : '' %></p>
+<table>
+  <thead>
+    <tr><th>Character</th><th>Realm</th><th>Rank</th><th>Progress</th></tr>
+  </thead>
+  <tbody>
+<% for (const r of missing) { -%>
+    <tr class="<%= r.cls %>"><td><%= r.name %></td><td><%= r.realm %></td><td><%= r.rank %></td><td><%= r.progress %></td></tr>
+<% } -%>
+  </tbody>
+</table>
+<p>The folio is per character, an alt listed here can still have a finished main.</p>
+</body>
+</html>

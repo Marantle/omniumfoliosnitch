@@ -1,0 +1,22 @@
+{
+  "name": "omniumfoliosnitch",
+  "version": "1.0.0",
+  "description": "Tracks Omnium Folio slacking in Finnish mythic raiding guilds",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "omnium": "bun src/omnium.ts",
+    "raiders": "bun src/raiders.ts",
+    "site": "bun src/site.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.2",
+    "@types/ejs": "^3.1.5",
+    "typescript": "^5.7.3"
+  }
+}

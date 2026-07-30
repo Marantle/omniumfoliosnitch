@@ -1,0 +1,922 @@
+[
+  {
+    "guild": "Afterburst",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Anatidaephobia",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Angry Moose",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Anonyymi",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "Anonyymi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Anonyymit Wowittajat",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "AoK",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Arctic Circle",
+    "server": "Darkspear"
+  },
+  {
+    "guild": "Arktiset Olosuhteet",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Babylonia",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Barricade",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Beyond Harmless",
+    "server": "Sylvanas"
+  },
+  {
+    "guild": "Blackguard",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Booty Bois",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "CE-Tiimi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Delirium",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Diskohuone",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ebrius",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Eduskunta",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "ei ollu safe",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Enthyn Mussukat",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Epidemia",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Eternium",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Excido",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Exploding Labrats",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Farssi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Fear the Rabbit",
+    "server": "Defias-Brotherhood"
+  },
+  {
+    "guild": "Finlandia",
+    "server": "Wildhammer"
+  },
+  {
+    "guild": "Finnish Brute Force",
+    "server": "Aszune"
+  },
+  {
+    "guild": "FINSTACK",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Forbidden",
+    "server": "Vashj"
+  },
+  {
+    "guild": "Gear Factory",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Gentle Wipes",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Gifu",
+    "server": "AlAkir"
+  },
+  {
+    "guild": "Gilta",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "graveyard momentum",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Hakkapeliitta",
+    "server": "Darkspear"
+  },
+  {
+    "guild": "Hashtag Risuaita",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Herska",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Hikivirta",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "HILDA",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "HinausYhtiö",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Horna",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "HUHUU",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Hunsvotit",
+    "server": "Shattered-Hand"
+  },
+  {
+    "guild": "hyvät ucot",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Härdelli",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "IHAN SAMA",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Immersio",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Intervention",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ipit",
+    "server": "Lightbringer"
+  },
+  {
+    "guild": "Irstaat Sauvakävelijät",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "ISKÄ TUU TAKAS",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Kaamos",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Kaaos",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Kalmankaarti",
+    "server": "Shattered-Hand"
+  },
+  {
+    "guild": "Kalmankaartí",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Kannunkulma",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Karanteeni",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Kattotuuletin",
+    "server": "Magtheridon"
+  },
+  {
+    "guild": "Kelacity",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "KHG",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Kilta",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Kipinä",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Kirous",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Kissanviikset",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Kitty Cat Death Squad",
+    "server": "Chamber-of-Aspects"
+  },
+  {
+    "guild": "Kitty Cat Death Squad",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Kohmelo",
+    "server": "Wildhammer"
+  },
+  {
+    "guild": "Kolmiolääke",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Kompromissi",
+    "server": "Sylvanas"
+  },
+  {
+    "guild": "Korruptio",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Kortisto",
+    "server": "Sylvanas"
+  },
+  {
+    "guild": "Koskenkorva",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Kossukolalla",
+    "server": "The Maelstrom"
+  },
+  {
+    "guild": "Kovisjengi",
+    "server": "Wildhammer"
+  },
+  {
+    "guild": "Kukko",
+    "server": "Stormscale"
+  },
+  {
+    "guild": "Kultzipuppelit",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Kuura",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Kyy",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "käsipainoilla bodaus",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Lakko",
+    "server": "Defias-Brotherhood"
+  },
+  {
+    "guild": "Legio Pro Fennia",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Legioona",
+    "server": "Balnazzar"
+  },
+  {
+    "guild": "Legioona",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Leipäjuusto Oy",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Level One",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Liekkiö",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Likasimmat",
+    "server": "Defias-Brotherhood"
+  },
+  {
+    "guild": "LkaksP Issue",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Los Ratardos",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Luottamuspula",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "M A N I A C XD",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Mambo",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "Marras",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Materia",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Memento",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Memento",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Metalocalypse",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Metsien Kusipäät",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Metsäbileet",
+    "server": "Draenor"
+  },
+  {
+    "guild": "MONGO",
+    "server": "Stormscale"
+  },
+  {
+    "guild": "Morian Dwarfs",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Moti",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Muisted",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Myrsky",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Naapurit",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Naava",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Napalmikuolema",
+    "server": "Zenedar"
+  },
+  {
+    "guild": "Napista",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Nave",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Nestehukka",
+    "server": "Magtheridon"
+  },
+  {
+    "guild": "Nimettömät",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Ninjapartio",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "Niskalaukaus",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Noni",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Northern",
+    "server": "Frostmane"
+  },
+  {
+    "guild": "Northsky",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "NYRKEILLÄ",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Näkijän taru",
+    "server": "Bloodfeather"
+  },
+  {
+    "guild": "Olohuone",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Omituisten Otusten Kerho",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Original",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Original Double Salted",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Papan synttärit",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Pari Pelikaljaa",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Pari Pelikaljaa",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Perspektiivi",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "PH-Tiimi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Pimento",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Pirtti",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Pohjoinen",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "Pohjoinen",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Pohjola",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Pohjosen Susilauma",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "POINTY HAT CREW",
+    "server": "QuelThalas"
+  },
+  {
+    "guild": "Pro Finlandia",
+    "server": "Nordrassil"
+  },
+  {
+    "guild": "Pro Finlandia",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Pulumafia",
+    "server": "Stormscale"
+  },
+  {
+    "guild": "Päiväkoti",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Quarantine",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Raging Pandas",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Rajatila",
+    "server": "Bladefist"
+  },
+  {
+    "guild": "Raukka Painaa Jarrua",
+    "server": "Zenedar"
+  },
+  {
+    "guild": "Rauta",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "RDH",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Remnant",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Rennosti",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Retkikunta",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ripcord",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Riskiryhmä",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "Roistot",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Rooster Ranch",
+    "server": "Lightnings-Blade"
+  },
+  {
+    "guild": "Rotko",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "Routa",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ruojat",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Rupusakki",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "Rustlers",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ryöstöretki",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "Satanolla",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Saunan Taakse",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Saunatauko",
+    "server": "Bladefist"
+  },
+  {
+    "guild": "Schwein",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Selkäsauna",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Send Help",
+    "server": "Frostwhisper"
+  },
+  {
+    "guild": "SEPON KALASEURA",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "SHC",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Sheldonia",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Silmitön Nuke",
+    "server": "Wildhammer"
+  },
+  {
+    "guild": "Sinister",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Sinners Inc",
+    "server": "Bloodfeather"
+  },
+  {
+    "guild": "Sisu",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Sisu",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Sisu",
+    "server": "Veknilash"
+  },
+  {
+    "guild": "Sisäpiiri",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Slack",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Slummatti",
+    "server": "Chamber-of-Aspects"
+  },
+  {
+    "guild": "Soppa",
+    "server": "Emerald Dream"
+  },
+  {
+    "guild": "Soppa",
+    "server": "Sylvanas"
+  },
+  {
+    "guild": "Sorvan Kylä",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Sotkamon Jymy",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "SOULKEEPERS",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "SPH-Tiimi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "ST-Raid",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Sydäntalvi",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Synergia",
+    "server": "Outland"
+  },
+  {
+    "guild": "Taikaolennot",
+    "server": "Outland"
+  },
+  {
+    "guild": "Talotaikurit",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Talvisota",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Tervaleijona",
+    "server": "Burning-Steppes"
+  },
+  {
+    "guild": "Tervaleijona",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "The Arctica",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "The Chain of Dogs",
+    "server": "Vashj"
+  },
+  {
+    "guild": "The Karelian Isthmus",
+    "server": "Khadgar"
+  },
+  {
+    "guild": "Thousands Of Lakes",
+    "server": "Vashj"
+  },
+  {
+    "guild": "Thy Flesh Consumed",
+    "server": "Earthen Ring"
+  },
+  {
+    "guild": "Tony Halme Pro Skater",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Traditio",
+    "server": "Draenor"
+  },
+  {
+    "guild": "Travestia",
+    "server": "Ragnaros"
+  },
+  {
+    "guild": "Tröllin Likaiset Varpaat",
+    "server": "Laughing-Skull"
+  },
+  {
+    "guild": "Tuju",
+    "server": "Kazzak"
+  },
+  {
+    "guild": "Tulikaste",
+    "server": "Chamber-of-Aspects"
+  },
+  {
+    "guild": "Tunnel Vision",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "TURBO SAAB",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Turpasauna",
+    "server": "Lightnings-Blade"
+  },
+  {
+    "guild": "TURTLES KIMBLE",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "Twilight Sentinels",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Työmaa",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Uimakoulu Titanic",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Underdogs",
+    "server": "Ravencrest"
+  },
+  {
+    "guild": "Unit of FaceRollers",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Univaje",
+    "server": "Kul Tiras"
+  },
+  {
+    "guild": "Univelka",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "Urheilujätkät",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Usva",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Vaakamambo",
+    "server": "Tarren-Mill"
+  },
+  {
+    "guild": "Valiojoukko",
+    "server": "Argent-Dawn"
+  },
+  {
+    "guild": "Valkoiset Mitsut",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Valo",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "VIIKATE",
+    "server": "Sunstrider"
+  },
+  {
+    "guild": "Visio",
+    "server": "Darksorrow"
+  },
+  {
+    "guild": "VMTL",
+    "server": "Twisting-Nether"
+  },
+  {
+    "guild": "Voimafantasiat",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Väkívaltakunta",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Winland",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Wipe Circus",
+    "server": "Silvermoon"
+  },
+  {
+    "guild": "Wowikyyry",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Ykkösellä",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "YSKÄ",
+    "server": "Stormreaver"
+  },
+  {
+    "guild": "Yövuoro",
+    "server": "Ravencrest"
+  }
+]

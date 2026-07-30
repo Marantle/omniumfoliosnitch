@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omnium Folio <%= day.date %></title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, sans-serif;
+    background: #14161a;
+    color: #d6d9de;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5em 1em 3em;
+    line-height: 1.5;
+  }
+  h1 { font-size: 1.5em; color: #e8c66b; margin: 0 0 0.2em; }
+  .sub { color: #8a919c; margin: 0 0 1.5em; }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 1.5em;
+    padding: 0.6em 1em;
+    background: #1b1e24;
+    border: 1px solid #2a2e36;
+    border-radius: 6px;
+    color: #8a919c;
+  }
+  nav a { color: #b9c0ca; text-decoration: none; }
+  nav a:hover { color: #e8c66b; }
+  nav .date { color: #e8c66b; font-weight: 600; }
+  details {
+    margin: 0.7em 0;
+    background: #1b1e24;
+    border: 1px solid #2a2e36;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  details[open] { border-color: #3a4048; }
+  summary {
+    cursor: pointer;
+    padding: 0.7em 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; color: #6b727d; transition: transform 0.15s; }
+  details[open] summary::before { transform: rotate(90deg); }
+  summary:hover { background: #21252c; }
+  summary .name { font-weight: 600; }
+  summary .badge {
+    margin-left: auto;
+    font-size: 0.85em;
+    padding: 0.15em 0.7em;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badge.ok   { background: #1e3524; color: #7fd18a; }
+  .badge.warn { background: #3a2f1a; color: #e0b45c; }
+  .badge.bad  { background: #3a1f1f; color: #e07b7b; }
+  summary .anchor { color: #4a4f58; text-decoration: none; }
+  summary .anchor:hover { color: #e8c66b; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 0.45em 1em; }
+  th {
+    color: #8a919c;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #2a2e36;
+  }
+  td { border-bottom: 1px solid #22262d; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #21252c; }
+  tr.locked td:last-child { color: #e07b7b; }
+  tr.partial td:last-child { color: #e0b45c; }
+  tr.nodata td:last-child { color: #6b727d; }
+  .alldone { color: #7fd18a; padding: 0.6em 1em 0.9em; margin: 0; }
+  .note { color: #6b727d; font-size: 0.9em; margin-top: 2em; }
+</style>
+</head>
+<body>
+<h1>Omnium Folio, missing progress in mythic L'ura guilds</h1>
+<p class="sub"><%= day.missingCount %> of <%= day.total %> checked raiders are not done.
+<%= day.luraOnly ? "Only raiders with a mythic L'ura kill are included." : "Only guilds with a mythic L'ura kill are listed." %></p>
+<nav>
+  <span><% if (older) { %><a href="<%= older %>.html">&larr; <%= older %></a><% } %></span>
+  <span class="date"><%= day.date %></span>
+  <span><% if (newer) { %><a href="<%= newer %>.html"><%= newer %> &rarr;</a><% } %></span>
+</nav>
+<% for (const g of day.guilds) { -%>
+<% const id = g.label.toLowerCase().replace(/[^\p{L}0-9]+/gu, '-').replace(/^-|-$/g, '') -%>
+<% const badge = g.missing.length === 0 ? 'ok' : g.missing.length * 2 >= g.total ? 'bad' : 'warn' -%>
+<details id="<%= id %>">
+  <summary>
+    <span class="name"><%= g.label %></span>
+    <span class="badge <%= badge %>"><%= g.missing.length === 0 ? 'all done' : `${g.missing.length} of ${g.total} behind` %></span>
+    <a class="anchor" href="#<%= id %>">#</a>
+  </summary>
+<% if (g.missing.length === 0) { -%>
+  <p class="alldone">Every raider has the folio finished.</p>
+<% } else { -%>
+  <div class="tablewrap">
+  <table>
+    <thead>
+      <tr><th>Character</th><th>Realm</th><th>Mythic pulls this tier</th><th>Progress</th></tr>
+    </thead>
+    <tbody>
+<% for (const r of g.missing) { -%>
+      <tr class="<%= r.cls %>"><td><%= r.name %></td><td><%= r.realm %></td><td><%= r.pulls %></td><td><%= r.progress %></td></tr>
+<% } -%>
+    </tbody>
+  </table>
+  </div>
+<% } -%>
+</details>
+<% } -%>
+<p class="note">The folio is per character, an alt listed here can still have a finished main.
+Raider lists come from Warcraft Logs mythic reports, folio progress from the Blizzard API.</p>
+<script>
+  var target = location.hash && document.getElementById(location.hash.slice(1))
+  if (target && target.tagName === 'DETAILS') { target.open = true; target.scrollIntoView() }
+</script>
+</body>
+</html>

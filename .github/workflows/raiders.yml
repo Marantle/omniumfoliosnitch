@@ -1,0 +1,32 @@
+name: raiders scan
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun src/raiders.ts
+        env:
+          WCL_CLIENT_ID: ${{ secrets.WCL_CLIENT_ID }}
+          WCL_CLIENT_SECRET: ${{ secrets.WCL_CLIENT_SECRET }}
+      - name: commit raider list
+        # runs even when the crawl step failed, a half-built cache still
+        # saves the next run from refetching those reports
+        if: always()
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add raiders.json cache
+          git diff --cached --quiet || git commit -m "raiders $(date -u +%F)"
+          git pull --rebase
+          git push
