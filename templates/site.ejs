@@ -89,12 +89,16 @@
   tr.partial td:last-child { color: #e0b45c; }
   tr.nodata td:last-child { color: #6b727d; }
   .alldone { color: #7fd18a; padding: 0.6em 1em 0.9em; margin: 0; }
+  .cheer { color: #7fd18a; }
+  .finished { color: #7fd18a; padding: 0.5em 1em 0; margin: 0; }
+  .gain { color: #7fd18a; font-size: 0.85em; margin-left: 0.4em; }
   .note { color: #6b727d; font-size: 0.9em; margin-top: 2em; }
 </style>
 </head>
 <body>
 <h1>Omnium Folio, missing progress in mythic L'ura guilds</h1>
-<p class="sub"><%= day.missingCount %> of <%= day.total %> checked raiders are not done.
+<p class="sub"><%= day.missingCount %> of <%= day.total %> checked raiders are not done.<% if (day.finishedCount) { %>
+<span class="cheer"><%= day.finishedCount %> finished since <%= day.prevDate %>.</span><% } %>
 <%= day.luraOnly ? "Only raiders with a mythic L'ura kill are included." : "Only guilds with a mythic L'ura kill are listed." %></p>
 <nav>
   <span><% if (older) { %><a href="<%= older %>.html">&larr; <%= older %></a><% } %></span>
@@ -110,6 +114,9 @@
     <span class="badge <%= badge %>"><%= g.missing.length === 0 ? 'all done' : `${g.missing.length} of ${g.total} behind` %></span>
     <a class="anchor" href="#<%= id %>">#</a>
   </summary>
+<% if (g.finished.length) { -%>
+  <p class="finished">Finished the folio since <%= day.prevDate %>: <%= g.finished.join(', ') %></p>
+<% } -%>
 <% if (g.missing.length === 0) { -%>
   <p class="alldone">Every raider has the folio finished.</p>
 <% } else { -%>
@@ -120,7 +127,7 @@
     </thead>
     <tbody>
 <% for (const r of g.missing) { -%>
-      <tr class="<%= r.cls %>"><td><%= r.name %></td><td><%= r.realm %></td><td><%= r.pulls %></td><td><%= r.progress %></td></tr>
+      <tr class="<%= r.cls %>"><td><%= r.name %></td><td><%= r.realm %></td><td><%= r.pulls %></td><td><%= r.progress %><% if (r.upFrom != null) { %><span class="gain">up from <%= r.upFrom %>/5</span><% } %></td></tr>
 <% } -%>
     </tbody>
   </table>

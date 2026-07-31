@@ -58,32 +58,59 @@ console.log(`saved data/${date}.json`)
 
 // every stored day gets its own page, index.html is a copy of the newest
 const files = (await readdir('data')).filter(f => f.endsWith('.json')).sort()
+const snaps: DaySnapshot[] = []
+for (const f of files) {
+  snaps.push(JSON.parse(await readFile(`data/${f}`, 'utf8')))
+}
+
 await mkdir('site', { recursive: true })
-for (let i = 0; i < files.length; i++) {
-  const d: DaySnapshot = JSON.parse(await readFile(`data/${files[i]}`, 'utf8'))
-  const dayGuilds = d.guilds.map(g => ({
-    label: `${g.guild} (${g.server})`,
-    total: g.results.length,
-    missing: g.results.filter(r => !isDone(r)).map(r => ({
-      name: r.name,
-      realm: r.realm,
-      pulls: r.pulls,
-      ...progressOf(r),
-    })),
-  }))
+for (let i = 0; i < snaps.length; i++) {
+  const d = snaps[i]
+  // folio weeks per raider on the previous stored day, for progress deltas
+  const prevWeeks = new Map<string, number>()
+  if (i > 0) {
+    for (const g of snaps[i - 1].guilds) {
+      for (const r of g.results) {
+        if (!r.error) prevWeeks.set(`${r.name}|${r.realm}`, r.weeks)
+      }
+    }
+  }
+
+  const dayGuilds = d.guilds.map(g => {
+    const finished: string[] = []
+    const missing = []
+    for (const r of g.results) {
+      const before = prevWeeks.get(`${r.name}|${r.realm}`)
+      if (isDone(r)) {
+        if (before != null && before < 5) finished.push(r.name)
+        continue
+      }
+      missing.push({
+        name: r.name,
+        realm: r.realm,
+        pulls: r.pulls,
+        ...progressOf(r),
+        upFrom: before != null && !r.error && r.weeks > before ? before : null,
+      })
+    }
+    return { label: `${g.guild} (${g.server})`, total: g.results.length, finished, missing }
+  })
+
   const day = {
     date: d.date,
+    prevDate: i > 0 ? snaps[i - 1].date : null,
     luraOnly: d.luraOnly === true,
     total: dayGuilds.reduce((n, g) => n + g.total, 0),
     missingCount: dayGuilds.reduce((n, g) => n + g.missing.length, 0),
+    finishedCount: dayGuilds.reduce((n, g) => n + g.finished.length, 0),
     guilds: dayGuilds,
   }
   const html = await ejs.renderFile('templates/site.ejs', {
     day,
-    older: i > 0 ? files[i - 1].replace('.json', '') : null,
-    newer: i < files.length - 1 ? files[i + 1].replace('.json', '') : null,
+    older: i > 0 ? snaps[i - 1].date : null,
+    newer: i < snaps.length - 1 ? snaps[i + 1].date : null,
   })
   await writeFile(`site/${d.date}.html`, html)
-  if (i === files.length - 1) await writeFile('site/index.html', html)
+  if (i === snaps.length - 1) await writeFile('site/index.html', html)
 }
-console.log(`built site/ with ${files.length} day page${files.length === 1 ? '' : 's'}`)
+console.log(`built site/ with ${snaps.length} day page${snaps.length === 1 ? '' : 's'}`)
