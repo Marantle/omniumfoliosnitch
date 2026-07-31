@@ -93,7 +93,13 @@ for (let i = 0; i < snaps.length; i++) {
         upFrom: before != null && !r.error && r.weeks > before ? before : null,
       })
     }
-    return { label: `${g.guild} (${g.server})`, total: g.results.length, finished, missing }
+    return {
+      label: `${g.guild} (${g.server})`,
+      total: g.results.length,
+      finished,
+      improved: missing.filter(m => m.upFrom != null).length,
+      missing,
+    }
   })
 
   const day = {

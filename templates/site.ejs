@@ -59,8 +59,8 @@
   details[open] summary::before { transform: rotate(90deg); }
   summary:hover { background: #21252c; }
   summary .name { font-weight: 600; }
+  summary .badges { margin-left: auto; display: flex; gap: 0.4em; }
   summary .badge {
-    margin-left: auto;
     font-size: 0.85em;
     padding: 0.15em 0.7em;
     border-radius: 999px;
@@ -69,6 +69,7 @@
   .badge.ok   { background: #1e3524; color: #7fd18a; }
   .badge.warn { background: #3a2f1a; color: #e0b45c; }
   .badge.bad  { background: #3a1f1f; color: #e07b7b; }
+  .badge.up   { background: #24322a; color: #9ec9a5; }
   summary .anchor { color: #4a4f58; text-decoration: none; }
   summary .anchor:hover { color: #e8c66b; }
   .tablewrap { overflow-x: auto; }
@@ -111,7 +112,15 @@
 <details id="<%= id %>">
   <summary>
     <span class="name"><%= g.label %></span>
-    <span class="badge <%= badge %>"><%= g.missing.length === 0 ? 'all done' : `${g.missing.length} of ${g.total} behind` %></span>
+    <span class="badges">
+<% if (g.finished.length) { -%>
+      <span class="badge ok">+<%= g.finished.length %> finished</span>
+<% } -%>
+<% if (g.improved) { -%>
+      <span class="badge up"><%= g.improved %> improved</span>
+<% } -%>
+      <span class="badge <%= badge %>"><%= g.missing.length === 0 ? 'all done' : `${g.missing.length} of ${g.total} behind` %></span>
+    </span>
     <a class="anchor" href="#<%= id %>">#</a>
   </summary>
 <% if (g.finished.length) { -%>
