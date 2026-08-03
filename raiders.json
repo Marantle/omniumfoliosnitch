@@ -4,40 +4,52 @@
     "server": "Sylvanas",
     "raiders": [
       {
+        "name": "Deandr",
+        "server": "Stormreaver",
+        "reports": 36,
+        "pulls": 980
+      },
+      {
         "name": "Kavvis",
         "server": "Stormreaver",
         "reports": 36,
         "pulls": 964
       },
       {
-        "name": "Deandr",
-        "server": "Stormreaver",
-        "reports": 35,
-        "pulls": 954
-      },
-      {
         "name": "Erggiw",
         "server": "Sylvanas",
-        "reports": 34,
-        "pulls": 927
+        "reports": 35,
+        "pulls": 953
       },
       {
         "name": "Kepaa",
         "server": "Sylvanas",
-        "reports": 33,
-        "pulls": 926
+        "reports": 34,
+        "pulls": 952
       },
       {
         "name": "Lumenos",
         "server": "Sylvanas",
-        "reports": 35,
-        "pulls": 922
+        "reports": 36,
+        "pulls": 948
       },
       {
         "name": "Velvets",
         "server": "Sylvanas",
-        "reports": 35,
-        "pulls": 919
+        "reports": 36,
+        "pulls": 945
+      },
+      {
+        "name": "Fulti",
+        "server": "Sylvanas",
+        "reports": 34,
+        "pulls": 939
+      },
+      {
+        "name": "Anniedal",
+        "server": "Stormreaver",
+        "reports": 34,
+        "pulls": 933
       },
       {
         "name": "Jonio",
@@ -46,70 +58,58 @@
         "pulls": 917
       },
       {
-        "name": "Fulti",
-        "server": "Sylvanas",
-        "reports": 33,
-        "pulls": 913
-      },
-      {
-        "name": "Anniedal",
-        "server": "Stormreaver",
-        "reports": 33,
-        "pulls": 907
-      },
-      {
         "name": "Teikodeath",
         "server": "Stormreaver",
-        "reports": 32,
-        "pulls": 861
+        "reports": 33,
+        "pulls": 887
       },
       {
         "name": "Berluscocoon",
         "server": "Sylvanas",
-        "reports": 32,
-        "pulls": 856
+        "reports": 33,
+        "pulls": 882
       },
       {
         "name": "Flingsabolt",
         "server": "ShatteredHand",
-        "reports": 29,
-        "pulls": 820
+        "reports": 30,
+        "pulls": 846
       },
       {
         "name": "Reisilisko",
         "server": "Draenor",
-        "reports": 28,
-        "pulls": 787
+        "reports": 29,
+        "pulls": 813
       },
       {
         "name": "Paattiqt",
         "server": "Sylvanas",
-        "reports": 29,
-        "pulls": 785
+        "reports": 30,
+        "pulls": 811
       },
       {
         "name": "Koskettelija",
         "server": "Sylvanas",
-        "reports": 28,
-        "pulls": 772
+        "reports": 29,
+        "pulls": 798
       },
       {
         "name": "Dirhunter",
         "server": "Sylvanas",
-        "reports": 28,
-        "pulls": 769
+        "reports": 29,
+        "pulls": 795
+      },
+      {
+        "name": "Cerseism",
+        "server": "Stormreaver",
+        "reports": 29,
+        "pulls": 783
       },
       {
         "name": "Lahis",
         "server": "Sylvanas",
         "reports": 27,
         "pulls": 760
-      },
-      {
-        "name": "Cerseism",
-        "server": "Stormreaver",
-        "reports": 28,
-        "pulls": 757
       },
       {
         "name": "Banjokarhu",
@@ -120,8 +120,14 @@
       {
         "name": "Sysi",
         "server": "Sylvanas",
-        "reports": 27,
-        "pulls": 562
+        "reports": 28,
+        "pulls": 588
+      },
+      {
+        "name": "Saol",
+        "server": "Sylvanas",
+        "reports": 20,
+        "pulls": 567
       },
       {
         "name": "Alemonk",
@@ -130,22 +136,16 @@
         "pulls": 548
       },
       {
-        "name": "Saol",
-        "server": "Sylvanas",
-        "reports": 19,
-        "pulls": 541
-      },
-      {
         "name": "Lehakylks",
         "server": "Sylvanas",
-        "reports": 20,
-        "pulls": 465
+        "reports": 21,
+        "pulls": 491
       },
       {
         "name": "Aledk",
         "server": "Sylvanas",
-        "reports": 17,
-        "pulls": 423
+        "reports": 18,
+        "pulls": 449
       },
       {
         "name": "Haiccuu",
@@ -158,6 +158,12 @@
         "server": "Sylvanas",
         "reports": 8,
         "pulls": 133
+      },
+      {
+        "name": "Guccikukkis",
+        "server": "Stormreaver",
+        "reports": 4,
+        "pulls": 104
       },
       {
         "name": "Moribos",
@@ -258,8 +264,8 @@
       {
         "name": "Elemage",
         "server": "Stormreaver",
-        "reports": 45,
-        "pulls": 857
+        "reports": 46,
+        "pulls": 862
       },
       {
         "name": "Grimi",
@@ -316,12 +322,6 @@
         "pulls": 564
       },
       {
-        "name": "Shockky",
-        "server": "Stormreaver",
-        "reports": 18,
-        "pulls": 434
-      },
-      {
         "name": "Grimfurs",
         "server": "Vashj",
         "reports": 15,
@@ -332,6 +332,12 @@
         "server": "Kazzak",
         "reports": 17,
         "pulls": 332
+      },
+      {
+        "name": "Shockky",
+        "server": "Stormreaver",
+        "reports": 9,
+        "pulls": 226
       },
       {
         "name": "Pyssysankari",
@@ -778,12 +784,6 @@
     "server": "Twisting-Nether",
     "raiders": [
       {
-        "name": "Ragenainen",
-        "server": "TwistingNether",
-        "reports": 35,
-        "pulls": 985
-      },
-      {
         "name": "Syruná",
         "server": "TwistingNether",
         "reports": 32,
@@ -800,6 +800,12 @@
         "server": "TwistingNether",
         "reports": 32,
         "pulls": 962
+      },
+      {
+        "name": "Ragenainen",
+        "server": "TwistingNether",
+        "reports": 34,
+        "pulls": 955
       },
       {
         "name": "Loharinttis",
@@ -2122,6 +2128,12 @@
         "pulls": 314
       },
       {
+        "name": "Varisdh",
+        "server": "Stormreaver",
+        "reports": 13,
+        "pulls": 307
+      },
+      {
         "name": "Ironikr",
         "server": "Stormreaver",
         "reports": 10,
@@ -2132,12 +2144,6 @@
         "server": "Stormreaver",
         "reports": 11,
         "pulls": 303
-      },
-      {
-        "name": "Varisdh",
-        "server": "Stormreaver",
-        "reports": 12,
-        "pulls": 302
       },
       {
         "name": "Behis",
@@ -2274,50 +2280,74 @@
       {
         "name": "Meijeri",
         "server": "Stormreaver",
-        "reports": 42,
-        "pulls": 1080
+        "reports": 44,
+        "pulls": 1112
       },
       {
         "name": "Summerpurple",
         "server": "Stormreaver",
-        "reports": 41,
-        "pulls": 1071
+        "reports": 43,
+        "pulls": 1103
       },
       {
         "name": "Frozenchoul",
         "server": "Stormreaver",
-        "reports": 39,
-        "pulls": 1065
+        "reports": 41,
+        "pulls": 1097
       },
       {
         "name": "Bënnÿ",
         "server": "Stormreaver",
-        "reports": 40,
-        "pulls": 1060
+        "reports": 42,
+        "pulls": 1092
       },
       {
         "name": "Rottavaari",
         "server": "Stormreaver",
-        "reports": 41,
-        "pulls": 1050
+        "reports": 43,
+        "pulls": 1082
       },
       {
         "name": "Arkkupiispa",
         "server": "Stormreaver",
-        "reports": 38,
-        "pulls": 1042
+        "reports": 40,
+        "pulls": 1074
       },
       {
         "name": "Mallu",
         "server": "Stormreaver",
-        "reports": 39,
-        "pulls": 1032
+        "reports": 41,
+        "pulls": 1064
       },
       {
         "name": "Elthia",
         "server": "Stormreaver",
+        "reports": 41,
+        "pulls": 1048
+      },
+      {
+        "name": "Kermisggs",
+        "server": "Stormreaver",
+        "reports": 40,
+        "pulls": 1041
+      },
+      {
+        "name": "Kädetön",
+        "server": "Stormreaver",
+        "reports": 41,
+        "pulls": 1035
+      },
+      {
+        "name": "Ralphieq",
+        "server": "Stormreaver",
+        "reports": 42,
+        "pulls": 1025
+      },
+      {
+        "name": "Taakib",
+        "server": "Stormreaver",
         "reports": 39,
-        "pulls": 1016
+        "pulls": 1021
       },
       {
         "name": "Olba",
@@ -2326,34 +2356,10 @@
         "pulls": 1010
       },
       {
-        "name": "Kermisggs",
-        "server": "Stormreaver",
-        "reports": 38,
-        "pulls": 1009
-      },
-      {
-        "name": "Kädetön",
-        "server": "Stormreaver",
-        "reports": 39,
-        "pulls": 1003
-      },
-      {
-        "name": "Ralphieq",
-        "server": "Stormreaver",
-        "reports": 40,
-        "pulls": 993
-      },
-      {
         "name": "Seniz",
         "server": "Stormreaver",
-        "reports": 38,
-        "pulls": 992
-      },
-      {
-        "name": "Taakib",
-        "server": "Stormreaver",
-        "reports": 37,
-        "pulls": 989
+        "reports": 39,
+        "pulls": 1004
       },
       {
         "name": "Ana",
@@ -2362,58 +2368,58 @@
         "pulls": 928
       },
       {
+        "name": "Lahti",
+        "server": "Stormreaver",
+        "reports": 35,
+        "pulls": 879
+      },
+      {
         "name": "Nahkajesu",
         "server": "Stormscale",
         "reports": 29,
         "pulls": 852
       },
       {
-        "name": "Lahti",
-        "server": "Stormreaver",
-        "reports": 33,
-        "pulls": 847
-      },
-      {
         "name": "Increase",
         "server": "Vashj",
-        "reports": 30,
-        "pulls": 801
+        "reports": 32,
+        "pulls": 833
       },
       {
         "name": "Kiärme",
         "server": "Stormreaver",
-        "reports": 27,
-        "pulls": 746
+        "reports": 28,
+        "pulls": 758
       },
       {
         "name": "Hutchika",
         "server": "Stormreaver",
-        "reports": 27,
-        "pulls": 721
+        "reports": 29,
+        "pulls": 753
       },
       {
         "name": "Voltti",
         "server": "Silvermoon",
-        "reports": 25,
-        "pulls": 563
+        "reports": 27,
+        "pulls": 595
       },
       {
         "name": "Kaidron",
         "server": "Vashj",
-        "reports": 18,
-        "pulls": 418
+        "reports": 20,
+        "pulls": 450
+      },
+      {
+        "name": "Feministi",
+        "server": "Stormreaver",
+        "reports": 16,
+        "pulls": 321
       },
       {
         "name": "Hutikkash",
         "server": "Stormreaver",
         "reports": 16,
         "pulls": 311
-      },
-      {
-        "name": "Feministi",
-        "server": "Stormreaver",
-        "reports": 14,
-        "pulls": 289
       },
       {
         "name": "Yesmonk",
@@ -2466,8 +2472,8 @@
       {
         "name": "Jpwl",
         "server": "Kazzak",
-        "reports": 19,
-        "pulls": 512
+        "reports": 21,
+        "pulls": 531
       },
       {
         "name": "Luuviulu",
@@ -3126,50 +3132,50 @@
       {
         "name": "Akatsunda",
         "server": "Stormreaver",
-        "reports": 37,
-        "pulls": 965
+        "reports": 39,
+        "pulls": 977
       },
       {
         "name": "Happyfun",
         "server": "Stormreaver",
-        "reports": 35,
-        "pulls": 944
+        "reports": 36,
+        "pulls": 949
       },
       {
         "name": "Smulbero",
         "server": "TwistingNether",
-        "reports": 33,
-        "pulls": 941
+        "reports": 34,
+        "pulls": 946
       },
       {
         "name": "Skryf",
         "server": "Stormreaver",
-        "reports": 33,
-        "pulls": 890
-      },
-      {
-        "name": "Wolfheart",
-        "server": "Stormreaver",
-        "reports": 33,
-        "pulls": 875
+        "reports": 34,
+        "pulls": 895
       },
       {
         "name": "Loopyw",
         "server": "Stormreaver",
+        "reports": 37,
+        "pulls": 888
+      },
+      {
+        "name": "Wolfheart",
+        "server": "Stormreaver",
         "reports": 35,
-        "pulls": 869
+        "pulls": 882
+      },
+      {
+        "name": "Acyy",
+        "server": "Stormreaver",
+        "reports": 36,
+        "pulls": 871
       },
       {
         "name": "Monkás",
         "server": "Stormreaver",
         "reports": 30,
         "pulls": 867
-      },
-      {
-        "name": "Acyy",
-        "server": "Stormreaver",
-        "reports": 34,
-        "pulls": 853
       },
       {
         "name": "Suomupertti",
@@ -3184,16 +3190,16 @@
         "pulls": 845
       },
       {
+        "name": "Ceme",
+        "server": "Stormreaver",
+        "reports": 33,
+        "pulls": 816
+      },
+      {
         "name": "Asta",
         "server": "Stormreaver",
         "reports": 26,
         "pulls": 815
-      },
-      {
-        "name": "Ceme",
-        "server": "Stormreaver",
-        "reports": 31,
-        "pulls": 808
       },
       {
         "name": "Wéze",
@@ -3202,22 +3208,22 @@
         "pulls": 807
       },
       {
+        "name": "Raeffidk",
+        "server": "Stormreaver",
+        "reports": 27,
+        "pulls": 730
+      },
+      {
         "name": "Mäyrämies",
         "server": "Stormreaver",
         "reports": 23,
         "pulls": 727
       },
       {
-        "name": "Raeffidk",
-        "server": "Stormreaver",
-        "reports": 25,
-        "pulls": 716
-      },
-      {
         "name": "Houppimonk",
         "server": "Stormreaver",
-        "reports": 24,
-        "pulls": 713
+        "reports": 25,
+        "pulls": 725
       },
       {
         "name": "Motip",
@@ -3252,14 +3258,14 @@
       {
         "name": "Misbhv",
         "server": "TwistingNether",
-        "reports": 23,
-        "pulls": 436
+        "reports": 25,
+        "pulls": 444
       },
       {
         "name": "Mentley",
         "server": "Stormreaver",
-        "reports": 25,
-        "pulls": 353
+        "reports": 27,
+        "pulls": 363
       },
       {
         "name": "Tortu",
@@ -3270,14 +3276,20 @@
       {
         "name": "Houppidin",
         "server": "Stormreaver",
-        "reports": 17,
-        "pulls": 240
+        "reports": 18,
+        "pulls": 245
       },
       {
         "name": "Cyberbully",
         "server": "Stormreaver",
         "reports": 7,
         "pulls": 208
+      },
+      {
+        "name": "Vli",
+        "server": "Stormreaver",
+        "reports": 10,
+        "pulls": 167
       },
       {
         "name": "Abysaly",
@@ -3288,50 +3300,44 @@
       {
         "name": "Fatedh",
         "server": "Stormreaver",
-        "reports": 8,
-        "pulls": 152
-      },
-      {
-        "name": "Vli",
-        "server": "Stormreaver",
-        "reports": 8,
-        "pulls": 148
-      },
-      {
-        "name": "Varis",
-        "server": "Stormreaver",
         "reports": 9,
-        "pulls": 114
+        "pulls": 157
       },
       {
         "name": "Perttiina",
         "server": "Stormreaver",
-        "reports": 7,
-        "pulls": 110
+        "reports": 9,
+        "pulls": 129
       },
       {
-        "name": "Happymemory",
+        "name": "Varis",
         "server": "Stormreaver",
-        "reports": 6,
-        "pulls": 104
-      },
-      {
-        "name": "Novidk",
-        "server": "Stormreaver",
-        "reports": 7,
-        "pulls": 104
+        "reports": 11,
+        "pulls": 128
       },
       {
         "name": "Naahwil",
         "server": "Stormreaver",
-        "reports": 8,
-        "pulls": 102
+        "reports": 10,
+        "pulls": 121
+      },
+      {
+        "name": "Novidk",
+        "server": "Stormreaver",
+        "reports": 9,
+        "pulls": 118
       },
       {
         "name": "Motibreath",
         "server": "Stormreaver",
-        "reports": 6,
-        "pulls": 96
+        "reports": 8,
+        "pulls": 115
+      },
+      {
+        "name": "Happymemory",
+        "server": "Stormreaver",
+        "reports": 8,
+        "pulls": 111
       },
       {
         "name": "Mäyrämíes",
@@ -3358,22 +3364,28 @@
         "pulls": 65
       },
       {
+        "name": "Cemer",
+        "server": "Stormreaver",
+        "reports": 5,
+        "pulls": 63
+      },
+      {
+        "name": "Fatehd",
+        "server": "Stormreaver",
+        "reports": 9,
+        "pulls": 59
+      },
+      {
         "name": "Acydh",
         "server": "Stormreaver",
         "reports": 3,
         "pulls": 55
       },
       {
-        "name": "Cemer",
-        "server": "Stormreaver",
-        "reports": 4,
-        "pulls": 52
-      },
-      {
         "name": "Houppipriest",
         "server": "Stormreaver",
-        "reports": 4,
-        "pulls": 51
+        "reports": 5,
+        "pulls": 53
       },
       {
         "name": "Pumper",
@@ -3382,16 +3394,16 @@
         "pulls": 51
       },
       {
-        "name": "Fatehd",
-        "server": "Stormreaver",
-        "reports": 7,
-        "pulls": 46
-      },
-      {
         "name": "Raeffi",
         "server": "Stormreaver",
+        "reports": 6,
+        "pulls": 50
+      },
+      {
+        "name": "Novpala",
+        "server": "Stormreaver",
         "reports": 5,
-        "pulls": 45
+        "pulls": 42
       }
     ]
   },
@@ -4584,198 +4596,6 @@
     ]
   },
   {
-    "guild": "SPH-Tiimi",
-    "server": "Stormreaver",
-    "raiders": [
-      {
-        "name": "Hirvihotline",
-        "server": "Stormreaver",
-        "reports": 22,
-        "pulls": 497
-      },
-      {
-        "name": "Vilburiina",
-        "server": "Stormscale",
-        "reports": 20,
-        "pulls": 487
-      },
-      {
-        "name": "Elyrìanna",
-        "server": "Draenor",
-        "reports": 20,
-        "pulls": 480
-      },
-      {
-        "name": "Nuuhs",
-        "server": "Silvermoon",
-        "reports": 18,
-        "pulls": 465
-      },
-      {
-        "name": "Farsx",
-        "server": "Stormreaver",
-        "reports": 18,
-        "pulls": 453
-      },
-      {
-        "name": "Kí",
-        "server": "Stormreaver",
-        "reports": 17,
-        "pulls": 451
-      },
-      {
-        "name": "Stéffe",
-        "server": "Silvermoon",
-        "reports": 18,
-        "pulls": 436
-      },
-      {
-        "name": "Vesipuhveli",
-        "server": "Khadgar",
-        "reports": 18,
-        "pulls": 436
-      },
-      {
-        "name": "Bulivyf",
-        "server": "Silvermoon",
-        "reports": 18,
-        "pulls": 435
-      },
-      {
-        "name": "Uuhj",
-        "server": "Stormreaver",
-        "reports": 19,
-        "pulls": 433
-      },
-      {
-        "name": "Guccikukkis",
-        "server": "Stormreaver",
-        "reports": 17,
-        "pulls": 427
-      },
-      {
-        "name": "Aphazel",
-        "server": "Draenor",
-        "reports": 19,
-        "pulls": 426
-      },
-      {
-        "name": "Hnriexd",
-        "server": "Stormreaver",
-        "reports": 16,
-        "pulls": 395
-      },
-      {
-        "name": "Odensius",
-        "server": "Draenor",
-        "reports": 16,
-        "pulls": 381
-      },
-      {
-        "name": "Birgittaxd",
-        "server": "Stormreaver",
-        "reports": 14,
-        "pulls": 350
-      },
-      {
-        "name": "Baldlight",
-        "server": "TarrenMill",
-        "reports": 15,
-        "pulls": 330
-      },
-      {
-        "name": "Misamisa",
-        "server": "Stormreaver",
-        "reports": 15,
-        "pulls": 325
-      },
-      {
-        "name": "Robbanxx",
-        "server": "Draenor",
-        "reports": 14,
-        "pulls": 312
-      },
-      {
-        "name": "Taikataisto",
-        "server": "Draenor",
-        "reports": 10,
-        "pulls": 258
-      },
-      {
-        "name": "Tonyhalmeone",
-        "server": "Silvermoon",
-        "reports": 9,
-        "pulls": 231
-      },
-      {
-        "name": "Kainovieno",
-        "server": "TwistingNether",
-        "reports": 10,
-        "pulls": 227
-      },
-      {
-        "name": "Yumeillidan",
-        "server": "Silvermoon",
-        "reports": 8,
-        "pulls": 220
-      },
-      {
-        "name": "Robbanwiz",
-        "server": "Draenor",
-        "reports": 11,
-        "pulls": 197
-      },
-      {
-        "name": "Muminsmorc",
-        "server": "Draenor",
-        "reports": 7,
-        "pulls": 166
-      },
-      {
-        "name": "Kukkaboika",
-        "server": "Stormreaver",
-        "reports": 7,
-        "pulls": 155
-      },
-      {
-        "name": "Pasaati",
-        "server": "TwistingNether",
-        "reports": 6,
-        "pulls": 152
-      },
-      {
-        "name": "Neutroniei",
-        "server": "Draenor",
-        "reports": 6,
-        "pulls": 149
-      },
-      {
-        "name": "Zenindreas",
-        "server": "AeriePeak",
-        "reports": 7,
-        "pulls": 84
-      },
-      {
-        "name": "Nahkasimo",
-        "server": "Stormreaver",
-        "reports": 3,
-        "pulls": 80
-      },
-      {
-        "name": "Affixi",
-        "server": "Stormreaver",
-        "reports": 6,
-        "pulls": 66
-      },
-      {
-        "name": "Buó",
-        "server": "Stormreaver",
-        "reports": 3,
-        "pulls": 62
-      }
-    ]
-  },
-  {
     "guild": "Taikaolennot",
     "server": "Outland",
     "raiders": [
@@ -5702,6 +5522,12 @@
         "server": "Stormreaver",
         "reports": 9,
         "pulls": 80
+      },
+      {
+        "name": "Robbanwiz",
+        "server": "Draenor",
+        "reports": 5,
+        "pulls": 71
       },
       {
         "name": "Tervá",
