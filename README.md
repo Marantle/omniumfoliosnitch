@@ -38,14 +38,14 @@ Checks every guild member at a given rank or above for Omnium Folio progress
 achievement).
 
 ```
-bun src/omnium.ts <realm-slug> <guild-slug> <rank-number-or-character> [--html] [--lura]
+bun src/omnium.ts <realm-slug> <guild-slug> <rank-number-or-character> [--html] [--ulatek]
 ```
 
 Passing a character name uses that character's rank as the cutoff. With
 `--html` the members who are not done are also written to a timestamped
 `report-YYYY-MM-DD-HHMM.html`, rendered from `templates/report.ejs`. With
-`--lura` only members who have the Mythic: Midnight Falls achievement (the
-mythic L'ura kill) are counted, which narrows the list to the mythic raiders.
+`--ulatek` only members who have the Mythic: Ula'tek achievement (the end boss
+of The Venomous Abyss) are counted, which narrows the list to the mythic raiders.
 
 Note the folio is per character, so an alt showing as behind can still belong
 to someone whose main is finished.
@@ -69,15 +69,16 @@ can hit the hourly points budget, the script waits it out and continues.
 ## Nightly snapshots and GitHub Pages
 
 ```
-bun src/site.ts [--lura]
+bun src/site.ts [--ulatek]
 ```
 
 Checks folio progress for every raider in `raiders.json`, saves the day's
 results to `data/<date>.json` and rebuilds the pages in `site/`, one per
 stored day with links between days, `index.html` being the newest. Each
 guild is an expandable section showing who is behind, guilds with everyone
-done show a green all done badge. Guilds where nobody has a mythic L'ura
-kill are left out of the day.
+done show a green all done badge. A guild makes the list once at least two
+of its raiders have 4 or more mythic Venomous Abyss bosses down. Older days
+from the previous tier still show the L'ura gate they were built with.
 
 Two workflows keep it running: `raiders.yml` recrawls Warcraft Logs on
 Monday mornings (the report cache keeps recrawls cheap), `nightly.yml` runs

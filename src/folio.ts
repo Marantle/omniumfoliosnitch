@@ -4,29 +4,37 @@ import { getCharacterProfile } from './blizzard'
 export const FOLIO_STUDIES = 63325
 // The Sunstrider Omnium is the intro questline that unlocks the folio
 export const SUNSTRIDER_OMNIUM = 62606
-// Mythic: Midnight Falls, awarded for killing L'ura on mythic
-export const MYTHIC_LURA = 61379
+// Mythic kill achievements for The Venomous Abyss bosses. Kith'ix has none.
+export const MYTHIC_BOSSES = [63523, 63524, 63525, 63526, 63527, 63528, 63529, 63476, 63682]
+// Mythic: Ula'tek, the end boss
+export const MYTHIC_ULATEK = 63476
 
 export interface CharCheck {
   weeks: number
   unlocked: boolean
-  luraKill: boolean
+  // how many Venomous Abyss bosses the character has killed on mythic
+  bossKills: number
+  ulatekKill: boolean
+  // when the character earned the mythic Ula'tek achievement
+  ulatekWhen?: number
   error?: boolean
 }
 
 async function checkOne(realm: string, name: string): Promise<CharCheck> {
   try {
     const data = await getCharacterProfile(realm, name, 'achievements')
-    const folio = data.achievements.find(a => a.id === FOLIO_STUDIES)
-    const unlock = data.achievements.find(a => a.id === SUNSTRIDER_OMNIUM)
-    const lura = data.achievements.find(a => a.id === MYTHIC_LURA)
+    const done = new Map(
+      data.achievements.filter(a => a.criteria?.is_completed).map(a => [a.id, a]),
+    )
     return {
-      weeks: folio?.criteria?.amount ?? 0,
-      unlocked: unlock?.criteria?.is_completed === true,
-      luraKill: lura?.criteria?.is_completed === true,
+      weeks: data.achievements.find(a => a.id === FOLIO_STUDIES)?.criteria?.amount ?? 0,
+      unlocked: done.has(SUNSTRIDER_OMNIUM),
+      bossKills: MYTHIC_BOSSES.filter(id => done.has(id)).length,
+      ulatekKill: done.has(MYTHIC_ULATEK),
+      ulatekWhen: done.get(MYTHIC_ULATEK)?.completed_timestamp,
     }
   } catch {
-    return { weeks: 0, unlocked: false, luraKill: false, error: true }
+    return { weeks: 0, unlocked: false, bossKills: 0, ulatekKill: false, error: true }
   }
 }
 

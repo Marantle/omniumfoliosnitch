@@ -6,7 +6,7 @@ import { wclQuery } from './wcl'
 // reports. Report fight data is cached in cache/ because old reports never
 // change, so only new reports cost points on later runs.
 
-const ZONES = [50, 46]
+const ZONES = [53]
 const MIN_REPORTS = 3
 const MIN_PULLS = 40
 

@@ -4,14 +4,14 @@ import { getGuildRoster } from './blizzard'
 import { checkCharacters, isDone, progressOf } from './folio'
 
 const wantHtml = process.argv.includes('--html')
-const luraOnly = process.argv.includes('--lura')
+const ulatekOnly = process.argv.includes('--ulatek')
 const [realm, guildSlug, rankArg] = process.argv.slice(2).filter(a => !a.startsWith('--'))
 
 if (!realm || !guildSlug || !rankArg) {
-  console.log('Usage: bun src/omnium.ts <realm-slug> <guild-slug> <rank-number-or-character> [--html] [--lura]')
+  console.log('Usage: bun src/omnium.ts <realm-slug> <guild-slug> <rank-number-or-character> [--html] [--ulatek]')
   console.log('Example: bun src/omnium.ts sylvanas beyond-harmless velvets')
   console.log('Reports Omnium Folio progress for every member at that rank or above.')
-  console.log("With --lura only members with a mythic L'ura kill are counted.")
+  console.log("With --ulatek only members with a mythic Ula'tek kill are counted.")
   console.log('With --html also writes the slackers to a timestamped report-*.html.')
   process.exit(1)
 }
@@ -37,9 +37,9 @@ const targets = roster
 console.log(`${targets.length} members to check\n`)
 
 let results = await checkCharacters(targets)
-if (luraOnly) {
-  results = results.filter(r => r.luraKill)
-  console.log(`${results.length} of them have the mythic L'ura kill\n`)
+if (ulatekOnly) {
+  results = results.filter(r => r.ulatekKill)
+  console.log(`${results.length} of them have the mythic Ula'tek kill\n`)
 }
 results.sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name))
 
@@ -64,7 +64,7 @@ if (wantHtml) {
     guildSlug,
     realm,
     maxRank,
-    luraOnly,
+    ulatekOnly,
     total: results.length,
     missing,
   })

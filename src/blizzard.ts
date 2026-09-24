@@ -14,6 +14,7 @@ export interface CharacterProfile {
 
 export interface CharacterAchievement {
   id: number
+  completed_timestamp?: number
   criteria?: { amount?: number; is_completed?: boolean }
 }
 
